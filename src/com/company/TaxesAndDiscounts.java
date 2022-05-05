@@ -10,12 +10,28 @@ public class TaxesAndDiscounts {
     double california = 0.0825;
   }
 
-  public void discount() {
-    double oneK = 0.03;
-    double fiveK = 0.05;
-    double sevenK = 0.07;
-    double tenK = 0.1;
-    double fiftyK = 0.15;
+  public double discount(int numberOfWares, int priceOfWares) {
+    int priceWares = numberOfWares * priceOfWares;
+    double discountedPrice = 0;
+    if (priceWares > 1000 && priceWares < 4999) {
+      double oneK = 0.03;
+      discountedPrice = (1 - oneK) * priceWares;
+    } else if (priceWares > 5000 && priceWares <= 6999) {
+      double fiveK = 0.05;
+      discountedPrice = (1 - fiveK) * priceWares;
+    } else if (priceWares > 7000 && priceWares <= 9999) {
+      double sevenK = 0.07;
+      discountedPrice = (1 - sevenK) * priceWares;
+    } else if (priceWares > 1000 && priceWares < 49999) {
+      double tenK = 0.1;
+      discountedPrice = (1 - tenK) * priceWares;
+    } else if (priceWares > 50000) {
+      double fiftyK = 0.15;
+      discountedPrice = (1 - fiftyK) * priceWares;
+    }
+    return discountedPrice;
   }
-  asd
+
+}
+
 }
