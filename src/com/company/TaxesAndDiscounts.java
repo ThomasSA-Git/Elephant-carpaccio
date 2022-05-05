@@ -1,6 +1,6 @@
 package com.company;
 
-public class StateTax {
+public class TaxesAndDiscounts {
 
   public void stateTaxes {
     double utah = 0.0685;
@@ -9,4 +9,6 @@ public class StateTax {
     double alberta = 0.04;
     double california = 0.0825;
   }
+
+
 }
