@@ -42,7 +42,9 @@ public class UserInterface {
     return tax;
   }
 
-  public void totalPrice(){
-
+  public void totalPrice(double totalPrice){
+    System.out.println("""
+        Totalprice is:\n
+        """ + totalPrice);
   }
 }

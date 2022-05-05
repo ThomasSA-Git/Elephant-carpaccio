@@ -8,8 +8,10 @@ public class Main {
 
         UserInterface ui = new UserInterface();
         TaxesAndDiscounts td = new TaxesAndDiscounts();
+        Beregning br = new Beregning();
         td.discount(ui.numberOfWares(), ui.priceOfWares());
-        ui.stateTax();
+        td.stateTaxes(ui.stateTax());
 
+        ui.totalPrice();
     }
 }

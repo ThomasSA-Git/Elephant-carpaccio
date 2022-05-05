@@ -2,12 +2,15 @@ package com.company;
 
 public class TaxesAndDiscounts {
 
-  public void stateTaxes() {
-    double utah = 0.0685;
-    double nevada = 0.08;
-    double texas = 0.0625;
-    double alabama = 0.04;
-    double california = 0.0825;
+  public double stateTaxes(String tax) {
+    switch (tax) {
+      case "UT" -> {return  0.0685;}
+      case "NV" -> {return 0.08;}
+      case "TX" -> {return 0.0625;}
+      case "AL" -> {return 0.04;}
+      case "CA" -> {return 0.0825;}
+    }
+    return 0;
   }
 
   public double discount(int numberOfWares, int priceOfWares) {
@@ -34,4 +37,3 @@ public class TaxesAndDiscounts {
 
 }
 
-}
