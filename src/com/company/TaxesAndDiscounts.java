@@ -10,7 +10,7 @@ public class TaxesAndDiscounts {
     double california = 0.0825;
   }
 
-  public void discounts () {
+  public void discount () {
     double oneK = 0.03;
     double fiveK = 0.05;
     double sevenK = 0.07;
