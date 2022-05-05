@@ -41,4 +41,8 @@ public class UserInterface {
     }
     return tax;
   }
+
+  public void totalPrice(){
+
+  }
 }
