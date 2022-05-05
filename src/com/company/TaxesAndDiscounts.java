@@ -17,4 +17,5 @@ public class TaxesAndDiscounts {
     double tenK = 0.1;
     double fiftyK = 0.15;
   }
+  asd
 }
